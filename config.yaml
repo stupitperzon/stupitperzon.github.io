@@ -39,7 +39,7 @@ params:
   includeBootstrapJs: false
   showActiveNav: true
   containerMaxWidth: 700px
-  dateFormat: Jan 21, 2024
+  dateFormat: Jan 2, 2006
   homeText: I could've moaned, but here's some music instead.
   audio: gypsytronic.mp3
   footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
