@@ -1,6 +1,6 @@
 baseURL: https://stupitperzon.github.io
 languageCode: en-us
-title: Vanilla
+title: stupitperzon's blog
 theme: vanilla-bootstrap-hugo-theme
 googleAnalytics: G-GGX5B4G4JK
 
@@ -39,10 +39,11 @@ params:
   includeBootstrapJs: false
   showActiveNav: true
   containerMaxWidth: 700px
-  dateFormat: Jan 2, 2006
-  homeText: Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream.
+  dateFormat: Jan 21, 2024
+  homeText: I could've moaned, but here's some music instead.
+  audio: gypsytronic.mp3
   footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
-  hideFooter: false
+  hideFooter: true
   katex: true
 
 markup:
