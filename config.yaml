@@ -1,8 +1,8 @@
-baseURL: https://example.com
+baseURL: https://stupitperzon.github.io
 languageCode: en-us
 title: Vanilla
 theme: vanilla-bootstrap-hugo-theme
-googleAnalytics: UA-123456789-1
+googleAnalytics: G-GGX5B4G4JK
 
 taxonomies:
   tag: tags
@@ -14,26 +14,26 @@ permalinks:
 # The value of pre is the icon name
 menu:
   nav:
-  - name: Home
-    pre: home
-    url: /
-    weight: 1
-  - name: Blog
-    pre: edit
-    url: /post/
-    weight: 2
-  - name: Tags
-    pre: tag
-    url: /tags/
-    weight: 3
-  - name: About
-    pre: smile
-    url: /about/
-    weight: 4
-  - name: RSS
-    pre: rss
-    url: /index.xml
-    weight: 5
+    - name: Home
+      pre: home
+      url: /
+      weight: 1
+    - name: Blog
+      pre: edit
+      url: /post/
+      weight: 2
+    - name: Tags
+      pre: tag
+      url: /tags/
+      weight: 3
+    - name: About
+      pre: smile
+      url: /about/
+      weight: 4
+    - name: RSS
+      pre: rss
+      url: /index.xml
+      weight: 5
 
 params:
   includeBootstrapJs: false
