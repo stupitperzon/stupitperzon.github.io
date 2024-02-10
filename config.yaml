@@ -45,6 +45,7 @@ params:
   footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
   hideFooter: true
   katex: true
+  siteVerificationCode: dzMgBnrmwBiN5UlIDLg3ycEEvU6EN5L-dEBqVh45tp0
 
 markup:
   defaultMarkdownHandler: goldmark
