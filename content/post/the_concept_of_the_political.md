@@ -1,6 +1,6 @@
 ---
 date: "2024-02-15"
-tags: ["political theory"]
+tags: ["political theory", "history", "jurisprudence"]
 title: "The Concept of the Political"
 ---
 
