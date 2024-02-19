@@ -1,7 +1,7 @@
 ---
 date: "2024-01-27"
 tags: ["dsp", "mir", "math"]
-title: "Phase vocoding"
+title: "Phase Vocoding"
 ---
 
 Phase vocoding changes an audio signal's length without influencing its pitch. It also pitch shifts without time stretching audio. The visual counterpart to time stretching is image rescaling. The dimensions of the image would relate to the audio's length, and how the image looks would relate to the audio's pitch. When an image is stretched, its number of pixels would increase. The extra pixels need to be interpolated from its neighbors for the new image to look like the original. We have not achieved perfect interpolations yet, where the audio or image is preserved without side effects. This is noticeable in extreme time stretching, pitch shifting, or image rescaling, and not so much in editing software or media players, since they cap the limits. I'd like to learn more about time stretching as a subproblem to polyphonic melody extraction. That is another unsolved problem where we want to compute the melody when there are concurrent pitches. Extreme time stretching would make studying polyphonic melodies easier and add more tests.
