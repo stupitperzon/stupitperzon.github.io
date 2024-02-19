@@ -27,20 +27,25 @@ Today, liberalism is widespread and Schmitt's critiques still apply. What should
 ## Resources
 
 <a id="1">[1]</a>
+The Concept of the Political by Carl Schmitt
+
+<a id="2">[2]</a>
 https://www.history.com/topics/european-history/thirty-years-war
 
 Thirty Years' War
 
-<a id="2">[2]</a>
+<a id="3">[3]</a>
 https://www.youtube.com/watch?v=2xaF5p86Y84
 
 The Shia-Sunni divide
 
-<a id="3">[3]</a>
+<a id="4">[4]</a>
 https://www.youtube.com/watch?v=BDqvzFY72mg
 
 The fall of the Soviet Union
 
-<a id="4">[4]</a>
+<a id="5">[5]</a>
+Wikipedia
 
-Wikipedia and Encyclopedia Britannica
+<a id="6">[6]</a>
+Encyclopedia Britannica
