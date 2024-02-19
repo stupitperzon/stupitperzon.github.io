@@ -1,6 +1,6 @@
 ---
 date: "2024-01-27"
-tags: ["dsp", "mir"]
+tags: ["dsp", "mir", "math"]
 title: "Phase vocoding"
 ---
 
