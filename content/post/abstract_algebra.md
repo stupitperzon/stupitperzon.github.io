@@ -257,7 +257,7 @@ Proper ideals cannot contain units, otherwise the unity would be a part of the i
 
 A maximal ideal of a ring \\( R \\) is a proper ideal \\( M \\) such that there is no proper ideal \\( N \\) of \\( R \\) containing \\( M \\).
 
-A prime ideal \\( N \\) implies either \\( a \in N \\) or \\( b \in N \\) for \\( a, b \\) in a commutative ring \\( R \\).
+An ideal is prime if \\( ab\in N \\) implies either \\( a \in N \\) or \\( b \in N \\) for \\( a, b \\) in a commutative ring \\( R \\).
 
 In a commutative ring \\( R \\) with unity:
 1. An ideal \\( M \\) of \\( R \\) is maximal iff \\( R/M \\) is a field.
@@ -277,7 +277,33 @@ If we want to find all solutions of
 
 we can use a basis that is \\( \\{ x + y - 3z - 8, 2x + y + z + 5 \\} \\), or replace the second element with the remainder with the second divided by the first.
 
-We also want to transform the polynomials so that their power products, or modified terms in the form of \\(\prod_i {x_i}^{m_i} \forall m_i \ge 0\\), are ordered, so that any simplifications can terminate. Polynomials can then be mulitplied and added in the basis to reduce the size of power products. A Grobner basis ensures that picking any polynomial from the ideal, there will be a power product of a term before the polynomial in the ideal that divides it.
+We also want to transform the polynomials so that their power products, or modified expanded terms in the form of \\(\prod_i {x_i}^{m_i} \forall m_i \ge 0\\), are ordered, so that any simplifications can terminate. Polynomials can then be mulitplied and added in the basis to reduce the size of power products. A Grobner basis ensures that picking any polynomial from the ideal, there will be a power product of a term before the polynomial in the ideal that divides it.
+
+## Sections 29 - Extension Fields
+
+A field \\( E \\) is an extension field of \\( F \\) if \\( F \le E \\). If \\( f(x) \in F[x] \\), then there exists an extension field \\( E = F[x] / \langle p(x) \rangle, \alpha\in E \\) where \\( f(\alpha) = 0 \\) and \\( p(x) \\) is an irreducible factor of \\( f(x) \\).
+
+An element \\( \alpha \\) of an extension field \\( E \\) of a field \\( F \\) is algebraic over \\( F \\) if \\( f(\alpha) = 0 \\) for some \\( f(x)\in F[x] \\). Otherwise, it is transcendental. Algebraic numbers are elements of \\( \mathbb{C} \\) that are algebraic over \\( \mathbb{Q} \\); transcendental numbers the same with transcendentals. Every element \\( \beta \in E = F(\alpha) = b_0 + b_1\alpha + ... + b_{n-1}\alpha^{n-1}, b_i \in F \\).
+
+## Section 30 - Vector Spaces
+
+\\( F \\)-vector spaces consist of an abelian group of vectors \\( V \\) (vectors) interacting with a field \\( F \\) (scalars). \\( F[x] \\) is like a vector space, where elements are like vectors and multiplication by elements in \\( F \\) is like multiplying by a scalar. If \\( E \\) is an extension field of \\( F(\alpha) \\), \\( E \\) is a vector space over \\( F \\). The vector would be \\( \alpha \\) and the scalars would be the elements in \\( F \\). \\( F(\alpha) \\) would be a vector space over \\( \\{1, \alpha, ..., \alpha^{n-1}\\} \\)  (the basis which spans the vector space) where \\( n = [E : F] \\) is the degree of \\( \alpha \\) in \\( F \\).
+
+## Section 31 - Algebraic Extensions
+
+An extension field \\( E \\) of \\( F \\) is an algebraic extension of \\( F \\) if every element in \\( E \\) is algebraic over \\( F \\). If \\( K \\) is an extension field of \\( E \\), then \\(K\\) is an extension field of \\(F\\) as well, and \\([K:F] = [K:E][E:F]\\). By thinking about each of these in terms of bases (\\([K:E]\implies\\{\alpha_i\\}, [E:F]\implies\\{\beta_j\\}\\)), the product of these bases \\(\\{\alpha_i\beta_j\\}\\) produces the new basis. So the basis of \\(\mathbb{Q}(\sqrt{2}, \sqrt{3})\\) is \\(\\{1, \sqrt{2}, \sqrt{3}, \sqrt{6}\\}\\). The basis may be reduced. Check if an element has a different degree than it seems.
+
+The algebraic closure of \\( F \\) in \\( E \\) is the set of all \\( \alpha\in E \\) that are algebraic over \\( F \\). It's a subfield of \\( E \\). Every field has an algebraic closure.
+
+The field \\( \mathbb{C} \\) is algebraically closed, or that is, every element of \\(\mathbb{C}[z]\\) has zeroes. Suppose a complex function does not have any zeroes. That is, \\(\lim_{\lvert z\rvert \to \infty} = \infty\\). Then \\( 1/f \\) has a zero as it approaches infinity.
+
+You can also prove that every field has an algebraic closure by using Zorn's Lemma, which states that if a chain, or a sequence of sets where each next set is a superset of the previous one, in a partially ordered set (most elements are comparable with each other) has upper bounds, then the ordered set has a maximal element. To prove, think of \\(K, E, F\\) as chains and show that the algebraic closure is the maximal algebraic extension.
+
+## Section 33 - Finite Fields
+
+A Galois field is a finite field of order \\(p^n\\) where \\(p\\) is prime and \\(n\\) is a positive integer. If \\(E\\) is a finite extension of degree \\(n\\) over a field with \\(p\\) elements, \\(E\\) has \\(p^n\\) elements. The elements of \\(E\\) are the zeroes of \\(x^{p^{n}}-x \in \mathbb{Z}_p[x]\\) because you translate the order calculated from the previous sentence to the degree of the extension field and retrieve the polynomial from there.
+
+An element \\(\alpha\\) in a field is an nth root of unity if \\(\alpha^n=1\\). It's primitive if it's the smallest exponent that yields \\(1\\).
 
 ## Resources
 
