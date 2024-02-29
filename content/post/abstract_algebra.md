@@ -225,6 +225,60 @@ The evaluation homomorphism \\( \phi_2 : \mathbb{Q}[x] \rightarrow \mathbb{R} = 
 
 If \\( E \\) and \\( F \\) are fields, we can find zeroes of \\( f(\alpha) = \phi_\alpha(f(x)) = g(\alpha)h(\alpha) \\) if \\( f \\) can be factored into \\( g \\) or \\( h \\). In fact, every polynomial \\( f(x) \in F[x] \\) satisfies \\( f(x) = g(x)q(x) + r(x) \\). If the degree of \\( r(x) \\) is just greater than that of \\( g(x) \\), just apply the division algorithm to it and keep moving it to the quotient. If \\( \alpha \in F \\) is a zero, then \\( x - \alpha \\) is a factor of \\( f(x) \in F[x] \\). An irreducible polynomial \\( f(x) \\) cannot be factored into \\( g(x)h(x) \\). Finally, the Eisenstein Criterion says that if \\( p\in Z \\) is a prime, and \\( f(x) = {a_n}^{x}+...+a_0 \in \mathbb{Z}[x] \\) with \\( a_n \neq 0 \bmod{q} \\) but \\( a_i = 0 \bmod{q} \forall i < n \\) and \\( a_0 \neq 0 \bmod{q^2} \\), then \\( f(x) \\) is irreducible over \\( \mathbb{Q} \\). This is clear after you try to factor \\( f(x) \\) into \\( g(x)h(x) \\) and you realize one of the factors cannot have factor \\( p \\), because none of the leading coefficients have \\(p\\) as a factor, only one of the constants has \\(p\\) as a factor, and the rest of the coefficients only have \\(p\\) as factors. This can be used to prove that \\(f(x)=(x^{p}-1)/(x-1)\\) is irreducible over \\(\mathbb{Q}\\) by applying \\(g(x)_{x+1}\\) to it, and the numerator after applying the binomial theorem satisfies the Eisenstein Criterion.
 
+## Section 26 - Homomorphisms and Factor Rings
+
+Ring homomorphisms deal with the additive side of the ring more so than the multiplicative side. The kernel also relates to the additive identity.
+
+The specific properties are for a ring homomorphism \\( \phi : R \rightarrow R^\prime \\):
+1. \\( \phi(0) = 0^\prime \\)
+2. \\( \phi(-a) = -\phi(a) \forall a \in R \\)
+3. If \\( S \\) is a subring of \\( R \\), \\( \phi[S] \\) is a subring of \\( R^\prime \\)
+4. If \\( S^\prime \\) is a subring of \\( R^\prime \\), \\( \phi^{-1}[S^\prime] \\) is a subring of \\( R \\)
+5. If \\( R \\) has unity \\( 1 \\), \\( \phi(1) \\) is the unity for \\( \phi[R] \\) (not \\( R^\prime \\))
+
+The kernel of \\( \phi \\) is \\( \phi^{-1}[0^\prime] = \\{ r\in R \mid \phi(r) = 0^\prime \\} \\). The cosets are \\( \phi^{-1}[\phi(a)] = a + H = H +a \\).
+
+Some coset operations on a ring homomorphism \\( \phi: R \rightarrow R^\prime \\) with kernel \\( H \\) are:
+1. \\( (a+H)+(b+H) = (a+b)+H \\)
+2. \\( (a+H)(b+H) = (ab)+H \\)
+3. \\( \mu: R/H \rightarrow \phi[R] = \mu(a+H) = \phi(a) \\)
+
+2 is proven by finding \\( h_1, h_2 \in H \\) such that \\( \phi((a+h_1)(b+h_2)) = \phi(ab) \\) because \\( \phi(ah_1) = \phi(h_2b) = 0^\prime \\). So similarly, if we change \\( H \\) to be a subring instead of the kernel, 2 still holds iff \\( ab \in H, hb\in H \forall a,b \in R, h\in H \\).
+
+An ideal is an additive subgroup \\( N \\) of a ring \\( R \\) such that \\( aN \subseteq N, Nb \subseteq N \forall a, b \in R \\). The operation to generate members with respect to \\( R \\) is still multiplication, but its members are related to each other with addition. The ideals form a quotient ring \\( R/N \\) with the coset operations 1 and 2 replacing \\( H \\) with \\( N \\). My conceptual understanding is that ideals and normal subgroups are like the quotients which summarize information about the parent group/ring, cosets are like the divisors which combine each isomorphic quotient to become the dividend, and the parent group/ring is like the dividend which is the set needing to be compressed.
+
+The fundamental homomorphism of rings can be summarized as \\( \phi(x) = \mu\gamma(x) \\), where \\( \phi(x) : R \rightarrow R^\prime \\) is the ring homomorphism with kernel \\( N \\), \\(\mu : R/N \rightarrow \phi[R] = \mu(x + N) = \phi(x) \\), and \\( \gamma : R \rightarrow R/N = x + N \\).
+
+## Section 27 - Prime and Maximal Ideals
+
+The factor ring of a ring with zero divisors may be an integral domain or a field because it compresses the ring down to not have any zero divisors. It may also be worse (have more zero divisors) with more zero divisors.
+
+Proper ideals cannot contain units, otherwise the unity would be a part of the ideal since at least one element \\( r \in R \\) is the multiplicative inverse of the unit. Then, every element of \\( R \\) would be in that ideal.
+
+A maximal ideal of a ring \\( R \\) is a proper ideal \\( M \\) such that there is no proper ideal \\( N \\) of \\( R \\) containing \\( M \\).
+
+A prime ideal \\( N \\) implies either \\( a \in N \\) or \\( b \in N \\) for \\( a, b \\) in a commutative ring \\( R \\).
+
+In a commutative ring \\( R \\) with unity:
+1. An ideal \\( M \\) of \\( R \\) is maximal iff \\( R/M \\) is a field.
+2. An ideal \\( N \\) of \\( R \\) is a prime iff \\( R/N \\) is an integral domain.
+3. Every maximal ideal of \\( R \\) is a prime ideal.
+
+A principal ideal is an ideal, \\( \langle a \rangle = \\{ra\mid r\in R\\} \\) generated by \\( a \in R \\). A maximal ideal \\( \langle p(x) \rangle \\) of \\( F[x] \\) is irreducible.
+
+## Section 28 - Grobner Bases for Ideals
+
+An algebraic variety \\( V(S) \in F^n \\) is the set of all common zeroes of \\( S \subset F[x] \\). It is represented as an ideal with \\( I = \langle f_1, f_2, ... f_i \rangle = \\{ c_1f_1 + c_2f_2 \mid c_i\in R \\} \\), where \\( c_i,f_i\in F[x] \\). The basis \\( \langle f_1, f_2, ... f_i \rangle \\) can be reduced and transformed.
+
+If we want to find all solutions of
+
+\\[ x + y - 3z = 8 \\]
+\\[ 2x + y + z = -5 \\]
+
+we can use a basis that is \\( \\{ x + y - 3z - 8, 2x + y + z + 5 \\} \\), or replace the second element with the remainder with the second divided by the first.
+
+We also want to transform the polynomials so that their power products, or modified terms in the form of \\(\prod_i {x_i}^{m_i} \forall m_i \ge 0\\), are ordered, so that any simplifications can terminate. Polynomials can then be mulitplied and added in the basis to reduce the size of power products. A Grobner basis ensures that picking any polynomial from the ideal, there will be a power product of a term before the polynomial in the ideal that divides it.
+
 ## Resources
 
 <a id="1">[1]</a>
@@ -264,3 +318,8 @@ https://math.stackexchange.com/questions/2288438/difference-between-mathbbz-n-ma
 Proof of the polynomial division algorithm
 
 https://math.stackexchange.com/questions/48958/proof-of-the-polynomial-division-algorithm
+
+<a id="9">[9]</a>
+Why are ideals specifically additive subgroups
+
+https://math.stackexchange.com/questions/3016765/why-are-ideals-specifically-additive-subgroups
