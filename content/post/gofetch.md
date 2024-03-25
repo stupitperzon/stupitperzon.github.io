@@ -153,6 +153,7 @@ Disclaimer: I am not affiliated with the paper. Notes may be wrong.
 > Outputs (u, v)
 > u = A^Tr + e1
 > v = t^Tr + e2 + mp
+> t = As + e
 > r is a seed for randomness
 > e1, e2 are random polynomials
 > mp is M converted to polynomial
