@@ -35,7 +35,11 @@ Disclaimer: I am not affiliated with the paper. Notes may be wrong.
 > Sets are indexed by page frames
 > Each set contains cache lines
 > Cache lines are weaved in all cache levels
-> They're 64 bytes each
+> They're 64 bytes each for Firestorm
+> L1 < L2 < DRAM in terms of size
+> L1 > L2 > DRAM in terms of cost to make and speed
+> L1, L2, DRAM is volatile memory
+> They go away after restarts
 ```
 
 ## When is DMP triggered
@@ -46,6 +50,8 @@ Disclaimer: I am not affiliated with the paper. Notes may be wrong.
 > All pointers in the same cache line will be prefetched by DMP
 > DMP does Translation Lookaside Buffer (TLB) lookup
 > Pointers are virtual memory addresses after all
+> There's limited DRAM
+> So sometimes, pages need to be brought in from disk
 > TLB converts virtual memory addresses to physical ones
 > If there's a TLB miss, DMP inserts the pointer in TLB
 > Need to account for edge cases
@@ -73,7 +79,13 @@ Disclaimer: I am not affiliated with the paper. Notes may be wrong.
 > Flushing can be done with cache thrashing
 > Cache thrashing is creating a large array
 > It must be bigger than the L1 or L2 cache the line is in, 8x
-> Then you let the victim program run
+> Don't intentionally cache thrash
+> It hurts the performance of programs
+> Cache lines shared by different cores may contain shared variables
+> Invalidating one of the shared variables will invalidate the cache line
+> Cache lines contain other variables
+> So it will invalidate the other legit variables
+> Anyways, after the cache thrash, you let the victim program run
 > You reload the cache to see if the victim stored any pointers in cache
 > Does the cycles required to deref this match cache timings?
 > Sometimes, there's noise
@@ -204,3 +216,12 @@ Disclaimer: I am not affiliated with the paper. Notes may be wrong.
 
 <a id="1">[1]</a>
 https://gofetch.fail/
+
+<a id="2">[2]</a>
+https://www.howtogeek.com/891526/l1-vs-l2-vs-l3-cache/
+
+<a id="3">[3]</a>
+https://www.techtarget.com/searchstorage/definition/cache-memory#:~:text=DRAM%20is%20usually%20about%20half,to%20improve%20I%2FO%20performance.
+
+<a id="4">[4]</a>
+https://medium.com/@ali.gelenler/cache-trashing-and-false-sharing-ce044d131fc0#:~:text=Cache%20Thrashing%20is%20a%20flaw,data%20in%20an%20undesirable%20way.
