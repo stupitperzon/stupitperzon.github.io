@@ -40,9 +40,8 @@ params:
   showActiveNav: true
   containerMaxWidth: 700px
   dateFormat: Jan 2, 2006
-  homeText: I could've moaned, but here's some music instead.
-  audio: gypsytronic.mp3
-  footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
+  homeText: Sprinting through life
+  audio: junjo_arumeria.mp3
   hideFooter: true
   katex: true
   siteVerificationCode: dzMgBnrmwBiN5UlIDLg3ycEEvU6EN5L-dEBqVh45tp0

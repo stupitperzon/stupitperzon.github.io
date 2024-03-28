@@ -8,6 +8,6 @@ title: "About"
 > Am mentally challenged
 > Everything is challenging
 > I like everything
-> Including you
-> I love you
 ```
+
+Reach out to me at stupitperzon [at] gmail.com or stupitperzon on Discord.
