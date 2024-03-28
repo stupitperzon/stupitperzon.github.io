@@ -1,0 +1,17 @@
+---
+date: "2024-03-28"
+tags: ["personal"]
+title: "Vows"
+---
+
+I've jotted down timestamps ever since I was in middle school. Since this timestamp, I'll always be productive. Since this timestamp, I'll never masturbate again. Since this timestamp, I'll always be mindful. I'd proudly write the timestamp in a virgin notebook. Oh, how many notebooks have I tarnished to just write a single timestamp, a single promise that seemed so serious in the moment, but which did not seem so serious after a night's rest...
+
+I've got this issue, a neurosis, a harmless seeming one albeit. One where one day, I'd hate my identity, my lack of change or general progress, my addictions and habits. My past writings would seem ugly, ridiculous, childish. If they were physically written in a journal, I'd tear the pages out. And then I'd start over on the Internet with a new identity, and I'd tell myself that from now on, I'd try my best. Inevitably, with the passage of time, I'd fall into the mindlessness I promised myself I wouldn't fall into. And when I'd notice, I'd start over again. How many dead identities does the Internet have of me...
+
+This perfectionism helped me when I competed. I'd not stop practicing until I executed a mock performance to adequate standards top to bottom. With this, I sublated the mindnumbingness of repetition. If only I could apply such mindset to subjects I now consider supreme: math, philosophy, physics for starters. Those were the good old days, and I catch myself wanting to return to that past life...
+
+But I can't any longer. I'm an adult and explicitly organized competitions are for children. I also have realities that practically force me to be imperfect. A job which sometimes tires me out so much so that I can only manage to read a single page of Hegel the remaining day. If I'm not careful, I don't feed myself adequately and lose a few more days to exhaustion. Life itself contains repetitive motions that can't be numbed by a sense of higher purpose. And there's a shadow competition to find love, the most difficult competition of them all...
+
+Despite these realities, I am proud to have learned what I could the past two months. I may wake up and despise what I wrote just now, and notice what insecurities and low personalities I've inadvertently exposed of myself, but I am making the gamble that that disgust would not outweigh the pride I feel towards my newest accomplishments. I put real sweat and blood to an intensity and period unmatched by myself so far. I was serious when I learned the difficult things I did, but there exists more seriousness within me, for I know that I still goofed off a lot. I was originally motivated to post by narcissism, which I did not want to use to be productive but which I gave in nevertheless for the greater good, but I now sense self-movement, an opportunity to motivate myself with momentum, and a chance to break from darker beginnings...
+
+Therefore, starting _March 28 2024 2:59 AM PST_, I will try my best henceforth. I cannot be satisfied upon writing this, which I am feeling myself feel. I have not even touched real analysis, which all math undergrads take, and which I must learn at the barest minimum next. If I break this promise for continued intensity, which most certainly will happen, I'll forgive myself but not start over anymore, and continue building on top of this new presentation of myself, for this is the farthest of an ideal I've ever reached as of yet.
