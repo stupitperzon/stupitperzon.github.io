@@ -212,6 +212,37 @@ Disclaimer: I am not affiliated with the paper. Notes may be wrong.
 > Then we can figure out s1
 ```
 
+## Spectre
+
+```
+> This is like the Apple hardware-specific version of Spectre
+> Spectre/Meltdown is a class of similar side channel attacks
+> You can read any memory from other processes
+> Basically, there's speculative execution
+> When there's a branch
+> You execute the next part of the branch that's most likely to execute
+> That's called a commit
+> This is especially great if reading memory is the branch
+> Because reading memory is slow
+> The commit will execute before the branch condition is evaluated
+> You can trick the computer to always execute branches a certain way
+> Then put a nuanced branch that actually hits the other way
+> The computer will execute the wrong fork of the branch
+> When it realizes it does this
+> It clears the registers and rolls back the instruction pointer
+> But it doesn't clear the cache
+> Also, the execution of the commit doesn't check for Out Of Bounds reads/writes
+> The buffer overflow protections don't get inserted until later
+> Because speculative execution is supposed to be fast
+> But you can't actually read the cache even if you write some valuable info in it
+> So you basically do x[y[6]] in the malicious commit
+> Where x is your legit array
+> y is the array you're overrunning
+> and 6 is the overflow which you use to read other process memory
+> And now you can use a timing attack on x
+> By checking derefs and seeing which index was fastest
+```
+
 ## Resources
 
 <a id="1">[1]</a>
@@ -220,8 +251,19 @@ https://gofetch.fail/
 <a id="2">[2]</a>
 https://www.howtogeek.com/891526/l1-vs-l2-vs-l3-cache/
 
+L1, L2, L3 basics
+
 <a id="3">[3]</a>
 https://www.techtarget.com/searchstorage/definition/cache-memory#:~:text=DRAM%20is%20usually%20about%20half,to%20improve%20I%2FO%20performance.
 
+DRAM basics
+
 <a id="4">[4]</a>
 https://medium.com/@ali.gelenler/cache-trashing-and-false-sharing-ce044d131fc0#:~:text=Cache%20Thrashing%20is%20a%20flaw,data%20in%20an%20undesirable%20way.
+
+Cache Thrashing and False Sharing
+
+<a id="5">[5]</a>
+https://www.youtube.com/watch?v=YRohz9VO1YY
+
+Spectre Attack
