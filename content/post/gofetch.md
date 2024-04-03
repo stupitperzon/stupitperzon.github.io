@@ -1,6 +1,6 @@
 ---
 date: "2024-03-24"
-tags: ["cryptography", "math"]
+tags: ["cryptography", "math", "cs"]
 title: "GoFetch Attack Notes"
 ---
 
